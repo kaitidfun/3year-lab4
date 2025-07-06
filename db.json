@@ -32,6 +32,17 @@
       "time": "11:00",
       "petsAllowed": false,
       "organizer": "Carey Wales"
+    },
+    {
+      "id": 900909,
+      "category": "health",
+      "title": "Free Checkup Camp",
+      "description": "Free health checkups for the community.",
+      "location": "Central Park",
+      "date": "August 10, 2022",
+      "time": "09:00",
+      "petsAllowed": false,
+      "organizer": "Dr. Heal"
     }
   ]
 }
