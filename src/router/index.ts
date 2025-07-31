@@ -21,7 +21,7 @@ const router = createRouter({
       component: EventListView,
       props: (route) => ({
         page: parseInt(route.query.page?.toString() || '1'),
-        perPage: parseInt(route.query.perPage?.toString() || '2'), // default 2
+        perPage: parseInt(route.query.perPage?.toString() || '3'), // default 3
       }),
     },
     {
@@ -95,6 +95,13 @@ const router = createRouter({
       component: NetworkErrorView,
     },
   ],
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return { top: 0 }
+    }
+  },
 })
 
 router.beforeEach(() => {
